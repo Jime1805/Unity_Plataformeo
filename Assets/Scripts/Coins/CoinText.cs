@@ -1,13 +1,14 @@
 using UnityEngine;
 using System;
 using TMPro;
+using UnityEngine.UI;
 
 public class CoinText : MonoBehaviour
 {
-    TextMeshProUGUI _text;
+    Text _text;
     private void Start()
     {
-        _text = GetComponent<TextMeshProUGUI>();
+        _text = GetComponent<Text>();
     }
 
     private void OnEnable()
@@ -22,6 +23,6 @@ public class CoinText : MonoBehaviour
 
     private void ChangeText()
     {
-        _text.text = "Coins: " + CoinManager.Instance.Amount;
+        _text.text = "" + CoinManager.Instance.Amount;
     }
 }
