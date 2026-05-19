@@ -50,10 +50,10 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded());
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             Jump();
 
-         if (Input.GetKeyUp(KeyCode.Space) && body.linearVelocity.y > 0)
+         if ((Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow)) && body.linearVelocity.y > 0)
             body.linearVelocity = new Vector2(body.linearVelocity.x, body.linearVelocity.y / 2);
         
         if (onWall())
