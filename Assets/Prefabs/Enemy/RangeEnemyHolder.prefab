@@ -182,7 +182,7 @@ MonoBehaviour:
   numberOfFlashes: 0
   components:
   - {fileID: 8193180510543408793}
-  - {fileID: 0}
+  - {fileID: 1519583902832412811}
 --- !u!114 &8193180510543408793
 MonoBehaviour:
   m_ObjectHideFlags: 0
