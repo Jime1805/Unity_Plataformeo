@@ -15,6 +15,6 @@ public class Coin : MonoBehaviour
         if(collision.gameObject.tag != "Player") return;
         CoinManager.AddAmount(_points);
         anim.SetTrigger("pickUp");
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 1.0f);
     }
 }
